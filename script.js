@@ -1,6 +1,6 @@
 function rollDice() {
-    var image1 = document.getElementsByClassName("img1");
-    var image2 = document.getElementsByClassName("img2");
+    var image1 = document.getElementsByClassName("img1")[0];
+    var image2 = document.getElementsByClassName("img2")[0];
 
     var randomNumber1 = Math.floor(Math.random() * 6) + 1;
     var randomNumber2 = Math.floor(Math.random() * 6) + 1;
@@ -12,10 +12,10 @@ function rollDice() {
     image2.alt = "Player two's dice is " + randomNumber2;
 
     if (randomNumber1 > randomNumber2){
-        document.getElementsByClassName("output").textContent = "Player 1 is the Winner!";
+        document.getElementsByClassName("output")[0].textContent = "Player 1 is the Winner!";
     }else if (randomNumber1 < randomNumber2){
-        document.getElementsByClassName("output").textContent = "Player 2 is the Winner!";
+        document.getElementsByClassName("output")[0].textContent = "Player 2 is the Winner!";
     }else{
-        document.getElementsByClassName("output").textContent = "Its a Draw. Try again."
+        document.getElementsByClassName("output")[0].textContent = "Its a Draw. Try again."
     }
 }
