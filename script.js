@@ -12,10 +12,12 @@ function rollDice() {
     image2.alt = "Player two's dice is " + randomNumber2;
 
     if (randomNumber1 > randomNumber2){
-        document.getElementById("h2").textContent = "Player 1 is the Winner!";
+        document.getElementsByClassName("output").textContent = "Player 1 is the Winner!";
     }else if (randomNumber1 < randomNumber2){
-        document.getElementById("h2").textContent = "Player 2 is the Winner!";
+        document.getElementsByClassName("output").textContent = "Player 2 is the Winner!";
     }else{
-        document.getElementById("h2").textContent = "Its a Draw. Try again."
+        document.getElementsByClassName("output").textContent = "Its a Draw. Try again."
     }
 }
+
+rollDice();
