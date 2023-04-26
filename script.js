@@ -1,6 +1,6 @@
 function rollDice() {
-    var image1 = document.getElementById("img1");
-    var image2 = document.getElementById("img2");
+    var image1 = document.getElementsByClassName("img1");
+    var image2 = document.getElementsByClassName("img2");
 
     var randomNumber1 = Math.floor(Math.random * 6) + 1;
     var randomNumber2 = Math.floor(Math.random * 6) + 1;
@@ -19,5 +19,3 @@ function rollDice() {
         document.getElementById("h2").textContent = "Its a Draw. Try again."
     }
 }
-
-rollDice();
