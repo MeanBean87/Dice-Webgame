@@ -19,5 +19,3 @@ function rollDice() {
         document.getElementsByClassName("output").textContent = "Its a Draw. Try again."
     }
 }
-
-rollDice();
